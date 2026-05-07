@@ -16,7 +16,7 @@ export const AuthController = {
       const { email, password } = req.body;
 
       if (!email || !password) {
-        sendError(res, "Email and password are required", 400);
+        sendError(res, "Email and password are both required", 400);
         return;
       }
 
